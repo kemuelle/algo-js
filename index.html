@@ -9,28 +9,38 @@
     <script src="https://kit.fontawesome.com/50400a5dfe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header id="to_top">
-        <a href="" class="header__logo">flower&bloom</a>
-        <ul class="header__menu">
-            <li><a href="#">Home</a></li>
+    <!-- nav -->
+    <nav class="navbar">
+        <a href="#" class="logo">flower&bloom</a>
+        <div class="nav-links" >
+          <ul>
+            <li class><a href="#">Home</a></li>
             <li><a href="#">Share</a></li>
             <li><a href="#">Ride</a></li>
             <li><a href="#">Services</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Sign up</a></li>
         </ul>
+    </div>
+    <img src="menu bouton.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>  
+    <header></header>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
 
-        <div class="hearder__buttons">
-            <a href="#">Sign in</a>
-            <a href="#">Sign up</a>
-        </div>
-    </header>
-    <!-- Header -->
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+    <!-- nav -->
 
     <!-- home -->
     <section class="home">
         <div class="home__left">
             <h1 class="title">Flower&Bloom Paris.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, fugit. Debitis et beatae veritatis illum asperiores illo consequatur, incidunt velit at culpa eum deserunt iusto magnam aliquid amet totam iure.</p>
+            <p> Located in the heart of Paris, our florist celebrates floral art through unique arrangements. Founded by botanical enthusiasts, we marvel at our artistic bouquets, spreading floral beauty in the streets of Paris. Each flower we choose tells a story, capturing the romantic essence of the iconic city.</p>
             <div class="home__button">
                 <button>buy our flowers</button>
                 <button>quote
@@ -81,9 +91,7 @@
         <h1 class="title">Our best event</h1>
         <div class="img-section__content">
             <img src="salle floral.jpeg">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-               Omnis debitis reiciendis consectetur. Ut veritatis, maiores atque expedita officia beatae sit! 
-               Ea quidem blanditiis nemo. Libero pariatur iusto dolore soluta maxime.</p>
+            <p>Beautiful event located in South of France.</p>
         </div>
     </section>
     <!-- img section -->
@@ -107,21 +115,21 @@
         </div>
         
         <div class="col2">
-            <p class="small_title">type faces</p>
-            <a href="#">nord</a>
-            <a href="#">est</a>
-            <a href="#">sud</a>
+            <p class="small_title">Help</p>
+            <a href="#">Payment menthods accepted</a>
+            <a href="#">My account</a>
+            <a href="#">promotions</a>
             <a href="#">conditions</a>
-            <a href="#">left</a>
+            <a href="#">sitemap</a>
         </div>
 
         <div class="col3">
-            <p class="small_title">mark</p>
-            <a href="#">gucci</a>
-            <a href="#">fenti</a>
-            <a href="#">lolo</a>
-            <a href="#">divenci</a>
-            <a href="#">cost</a>
+            <p class="small_title">About flower&bloom </p>
+            <a href="#">careers</a>
+            <a href="#">our international commitments</a>
+            <a href="#">discover flower&bloom</a>
+            <a href="#">collaborations</a>
+            <a href="#">supplier</a>
         </div>
 
         <div class="col4">
@@ -137,6 +145,72 @@
         }
 
     </script>
+    <!-- formular -->
+    <form> 
+        <h4>Sign up for Flower&Bloom</h4>
+        <hr>
+        <div class="name-field">
+            <div>
+                <label>First name</label>
+                <input type="text" placeholder="Enter your firstName">
+            </div>
+
+            <div>
+                <label>Last name</label>
+                <input type="text" placeholder="Enter your lastName">
+            </div>
+
+            <div>
+                <label>Email address</label>
+                <input type="text" placeholder="Enter your email"> 
+            </div>
+
+            <div>
+               <label> Address</label>
+               <input type="text" placeholder="Enter your address">
+             </div>
+
+            <div>
+               <label>City</label>
+               <input type="text" placeholder="Enter your city name">
+            </div>
+
+             <div>
+               <label>Postcode</label>
+               <input type="text" placeholder="Enter your postcode">
+             </div>
+
+             <div>
+               <label>Country</label>
+               <input type="text" placeholder="Enter your country name">
+             </div>
+             
+             <div>
+               <label>Profile photo (optional)</label>
+               <input type="text">
+              </div>
+
+        <input type="submit" value="Browse">
+
+             <div>
+               <label>Password</label>
+               <input type="text" placeholder="Enter your password">
+             </div>
+
+             <div>
+              <label>Confirm password</label>
+              <input type="text" placeholder="Confirm your password">
+             </div>
+        <input type="submit" value="Sign up">
+        <p> Already have an account ? <a href="#">Sign in</a></p>
+        </div>
+        
+    
+
+        
+        
+
+    </form>
 </body>
 </html>
 
